@@ -1,0 +1,50 @@
+<img src="/assets/svg/logo-small.svg" alt="" class="ml16 mb20" />
+
+<nav>
+  <ul class="main-menu-list">
+    @for (menuItem of menuItems; track menuItem) {
+      <li>
+        <a class="menu-item" [routerLink]="[menuItem.link]" routerLinkActive="active">
+          <svg [icon]="menuItem.icon"></svg>
+          <span>{{ menuItem.label }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
+
+<p class="medium-text mb20 mt20">Подписчики</p>
+
+@for (profile of subscribers$ | async; track profile) {
+  <app-subcriber-card [profile]="profile"></app-subcriber-card>
+}
+
+<div class="mt20 to-subscribers">
+  <a [routerLink]="['/subscribers']" class="to-subscribers-link medium-text">Все подписчики</a>
+  <svg icon="arrow" class="to-subscribers-icon"></svg>
+</div>
+
+<footer class="sidebar__footer">
+  @if (me(); as me) {
+    @if (me.avatarUrl) {
+      <img [src]="me.avatarUrl | imgUrl" alt="" appClick (toggleChange)="onToggleChange($event)" />
+    } @else {
+      <img src="/assets/imgs/avatar-placeholder.png" alt="" />
+    }
+
+    <div class="medium-text username-text">{{ me.username }}</div>
+
+    <a [routerLink]="['settings']" class="settings-btn">
+      <svg icon="settings"></svg>
+    </a>
+
+    @if (showLogOutBtn) {
+      <div class="showLogOut">
+        <button [routerLink]="['/login']" class="btn-out">
+          <svg icon="get-out" class="svg15"></svg>
+        </button>
+        <span class="medium-text">Выход</span>
+      </div>
+    }
+  }
+</footer>

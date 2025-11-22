@@ -1,0 +1,56 @@
+:host {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: var(--light-border);
+  padding: 24px 20px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-gap: 16px;
+  cursor: pointer;
+}
+
+:host:hover,
+:host:focus-visible,
+:host.active {
+  background: var(--dark-active-color);
+}
+
+:host.active .chat-user {
+  color: var(--primary-color);
+}
+
+.last-message__wrapper {
+  width: 292px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+  color: var(--light-color);
+  overflow-wrap: break-word;
+}
+
+.chat-user {
+  color: var(--light-transparent-color);
+}
+
+.time-mess {
+  position: absolute;
+  color: var(--light-transparent-color);
+  right: 0;
+}
+
+.unreadMessage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+  height: 16px;
+  background: var(--primary-color);
+  color: var(--dark-color);
+}
+
+:host.active .time-mess {
+  color: var(--primary-color);
+}

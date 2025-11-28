@@ -4,10 +4,10 @@
   "scripts": {
     "format": "prettier --write src/**/*.{js,ts,json,html,css}",
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "nx run tik-talk2:serve",
+    "build": "nx build",
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
@@ -24,18 +24,36 @@
     "zone.js": "^0.15.1"
   },
   "devDependencies": {
+    "@angular-devkit/core": "^20.3.2",
+    "@angular-devkit/schematics": "^20.3.2",
     "@angular/build": "^20.3.2",
     "@angular/cli": "^20.3.2",
     "@angular/compiler-cli": "^20.3.0",
+    "@eslint/js": "^9.8.0",
+    "@nx/angular": "22.1.1",
+    "@nx/eslint": "22.1.1",
+    "@nx/eslint-plugin": "22.1.1",
+    "@nx/js": "22.1.1",
+    "@nx/workspace": "22.1.1",
+    "@schematics/angular": "^20.3.2",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
     "@types/jasmine": "~5.1.0",
     "@types/luxon": "^3.7.1",
+    "@typescript-eslint/utils": "^8.40.0",
+    "angular-eslint": "^20.3.0",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^10.0.0",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nx": "22.1.1",
     "prettier": "^3.6.2",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.40.0"
   }
 }

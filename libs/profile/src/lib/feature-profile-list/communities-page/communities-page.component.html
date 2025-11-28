@@ -1,0 +1,293 @@
+<form class="comm-search-form">
+	<label class="tt-form-comm-label">
+		<span class="tt-form-label__text"
+			>Сообщества</span
+		>
+		<div class="search-input-svg">
+			<input
+				type="text"
+				class="tt-form-input-comm"
+				placeholder="Введите название" />
+			<svg icon="search" class="search-svg"></svg>
+		</div>
+	</label>
+
+	<label class="tt-form-comm-label">
+		<span class="tt-form-label__text"
+			>Тема сообщества</span
+		>
+		<div class="search-input-svg">
+			<input
+				type="text"
+				class="tt-form-input-comm"
+				placeholder="Введите тему" />
+			<svg icon="search" class="search-svg"></svg>
+		</div>
+	</label>
+
+	<label class="tt-form-comm-label">
+		<span class="tt-form-label__text"
+			>Количество подписчиков</span
+		>
+		<div class="search-input-svg">
+			<input
+				type="text"
+				class="tt-form-input-comm"
+				placeholder="Введите количество" />
+			<svg icon="search" class="search-svg"></svg>
+		</div>
+	</label>
+
+	<label class="filter-icon">
+		<svg icon="filter" class="svg-fil"></svg>
+	</label>
+</form>
+
+<div class="communities-card">
+	<div class="comm-avatar">
+		<img
+			class="apl-img"
+			src="/assets/imgs/f1.jpg"
+			alt="" />
+		<div class="name-sub">
+			<strong class="h6">Формула 1</strong>
+			<div class="comm-descript">
+				<span class="subtitle">Автоспорт</span>
+				<span class="subtitle"
+					>232 181 подписчиков</span
+				>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3 class="h6 mb16">Подпиcались:</h3>
+		<div class="subscribers-comm-wrapper">
+			<svg
+				class="svg-sub-now"
+				icon="sub-now"></svg>
+			@for (
+				subscriber of subscribers$ | async;
+				track subscriber.id
+			) {
+				<a class="subscriber-avatar-comm">
+					<img
+						class="img-sub-comm"
+						[src]="subscriber.avatarUrl | imgUrl"
+						alt="" />
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="profile-card__action-btns">
+		<button class="btn-sub">
+			<span>Подписаться</span>
+			<svg icon="subscribe" class="svg-sub"></svg>
+		</button>
+		<button class="account-btn">
+			<svg icon="arrow-ac" class="svg-arr"></svg>
+		</button>
+	</div>
+</div>
+<div class="line"></div>
+
+<div class="communities-card">
+	<div class="comm-avatar">
+		<img
+			class="apl-img"
+			src="/assets/imgs/angular.jpg"
+			alt="" />
+		<div class="name-sub">
+			<strong class="h6">Angular</strong>
+			<div class="comm-descript">
+				<span class="subtitle"
+					>Программирование</span
+				>
+				<span class="subtitle"
+					>1 894 подписчиков</span
+				>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3 class="h6 mb16">Подпиcались:</h3>
+		<div class="subscribers-comm-wrapper">
+			<svg
+				class="svg-sub-now"
+				icon="sub-now"></svg>
+			@for (
+				subscriber of subscribersAng$ | async;
+				track subscriber.id
+			) {
+				<a class="subscriber-avatar-comm">
+					<img
+						class="img-sub-comm"
+						[src]="subscriber.avatarUrl | imgUrl"
+						alt="" />
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="profile-card__action-btns">
+		<button class="btn-sub">
+			<span>Подписаться</span>
+			<svg icon="subscribe" class="svg-sub"></svg>
+		</button>
+		<button class="account-btn">
+			<svg icon="arrow-ac" class="svg-arr"></svg>
+		</button>
+	</div>
+</div>
+<div class="line"></div>
+
+<div class="communities-card">
+	<div class="comm-avatar">
+		<img
+			class="apl-img"
+			src="/assets/imgs/apl.jpg"
+			alt="" />
+		<div class="name-sub">
+			<strong class="h6">АПЛ</strong>
+			<div class="comm-descript">
+				<span class="subtitle">Футбол</span>
+				<span class="subtitle"
+					>876 591 подписчиков</span
+				>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3 class="h6 mb16">Подпиcались:</h3>
+		<div class="subscribers-comm-wrapper">
+			<svg
+				class="svg-sub-now"
+				icon="sub-now"></svg>
+			@for (
+				subscriber of subscribersApl$ | async;
+				track subscriber.id
+			) {
+				<a class="subscriber-avatar-comm">
+					<img
+						class="img-sub-comm"
+						[src]="subscriber.avatarUrl | imgUrl"
+						alt="" />
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="profile-card__action-btns">
+		<button class="btn-sub">
+			<span>Подписаться</span>
+			<svg icon="subscribe" class="svg-sub"></svg>
+		</button>
+		<button class="account-btn">
+			<svg icon="arrow-ac" class="svg-arr"></svg>
+		</button>
+	</div>
+</div>
+<div class="line"></div>
+
+<div class="communities-card">
+	<div class="comm-avatar">
+		<img
+			class="apl-img"
+			src="/assets/imgs/it.jpg"
+			alt="" />
+		<div class="name-sub">
+			<strong class="h6">IT лицеисты</strong>
+			<div class="comm-descript">
+				<span class="subtitle">Образование</span>
+				<span class="subtitle"
+					>15 931 подписчиков</span
+				>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3 class="h6 mb16">Подпиcались:</h3>
+		<div class="subscribers-comm-wrapper">
+			<svg
+				class="svg-sub-now"
+				icon="sub-now"></svg>
+			@for (
+				subscriber of subscribersIt$ | async;
+				track subscriber.id
+			) {
+				<a class="subscriber-avatar-comm">
+					<img
+						class="img-sub-comm"
+						[src]="subscriber.avatarUrl | imgUrl"
+						alt="" />
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="profile-card__action-btns">
+		<button class="btn-sub">
+			<span>Подписаться</span>
+			<svg icon="subscribe" class="svg-sub"></svg>
+		</button>
+		<button class="account-btn">
+			<svg icon="arrow-ac" class="svg-arr"></svg>
+		</button>
+	</div>
+</div>
+<div class="line"></div>
+
+<div class="communities-card">
+	<div class="comm-avatar">
+		<img
+			class="apl-img"
+			src="/assets/imgs/ivan.png"
+			alt="" />
+		<div class="name-sub">
+			<strong class="h6"
+				>Иван Черняков Boosty</strong
+			>
+			<div class="comm-descript">
+				<span class="subtitle">Образование</span>
+				<span class="subtitle"
+					>78 458 подписчиков</span
+				>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h3 class="h6 mb16">Подпиcались:</h3>
+		<div class="subscribers-comm-wrapper">
+			<svg
+				class="svg-sub-now"
+				icon="sub-now"></svg>
+			@for (
+				subscriber of subscribersIvan$ | async;
+				track subscriber.id
+			) {
+				<a class="subscriber-avatar-comm">
+					<img
+						class="img-sub-comm"
+						[src]="subscriber.avatarUrl | imgUrl"
+						alt="" />
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="profile-card__action-btns">
+		<button class="btn-sub">
+			<span>Подписаться</span>
+			<svg icon="subscribe" class="svg-sub"></svg>
+		</button>
+		<button class="account-btn">
+			<svg icon="arrow-ac" class="svg-arr"></svg>
+		</button>
+	</div>
+</div>
+<div class="line"></div>

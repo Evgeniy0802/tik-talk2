@@ -1,0 +1,32 @@
+:host {
+	height: 100dvh;
+	padding: 16px 20px;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+.date-group {
+	display: grid;
+	place-items: center;
+}
+
+.group-message {
+	padding: 8px 10px;
+	color: var(--light-color);
+	background: var(--dark-hover-color);
+	border-radius: 1px;
+}
+
+.messages-wrapper {
+	overflow-y: scroll;
+	display: grid;
+	grid-gap: 12px;
+}
+
+.messages-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.input-send-message {
+	padding-top: 16px;
+}

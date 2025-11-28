@@ -1,0 +1,185 @@
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.394Z - Started listening on: \\.\pipe\nx\C:\Users\zhene\AppData\Local\Temp\deb7a1ec7213878718d2\d.sock
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.404Z - [WATCHER]: Subscribed to changes within: C:\Users\zhene\Documents\GitHub\tik-talk2 (native)
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.409Z - Established a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.421Z - Closed a connection. Number of open connections: 0
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.424Z - Established a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:35.543Z - Time taken for 'loadSpecifiedNxPlugins' 25.993299999999977ms
+Time for 'plugin worker 5312 code loading' 12.285899999999998
+Time for 'plugin worker 12620 code loading' 20.449299999999994
+Time for 'plugin worker 6868 code loading' 13.830400000000012
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.190Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.190Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.191Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.264Z - Time taken for 'Load Nx Plugin: C:\Users\zhene\Documents\GitHub\tik-talk2\node_modules\nx\src\plugins\package-json' 750.7169ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.283Z - Time taken for 'Load Nx Plugin: C:\Users\zhene\Documents\GitHub\tik-talk2\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 768.8162ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.322Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.322Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.322Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.325Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.334Z - Time taken for 'loadDefaultNxPlugins' 809.2321000000001ms
+Time for 'nx/core/package-json:createNodes' 1.876700000000028
+Time for 'nx/core/project-json:createNodes' 2.4120999999998958
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 34.52750000000003
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:36.435Z - Time taken for 'build-project-configs' 69.09349999999995ms
+Time for 'build typescript dependencies' 1467.6454
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.161Z - [SYNC]: collect registered sync generators
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.210Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.217Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.217Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.218Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.230Z - Time taken for 'total for creating and serializing project graph' 2026.5119ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.231Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.231Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 2027. Response time: 14.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.402Z - Received raw message of length 1143
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.402Z - Received json message of type PRE_TASKS_EXECUTION
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.408Z - Serializing response for PRE_TASKS_EXECUTION message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.408Z - Responding to PRE_TASKS_EXECUTION message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.408Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.425Z - Time taken for 'preTasksExecution' 4.313199999999597ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.426Z - Done responding to the client handleRunPreTasksExecution
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.426Z - Handled json message PRE_TASKS_EXECUTION. Handling time: 5. Response time: 18.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.585Z - Received raw message of length 5989
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.585Z - Received json message of type HASH_TASKS
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.587Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.602Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+DEBUG nx::native::tasks::hash_planner: get_plans_internal COMPLETED in 15.8252ms - processed 1 tasks (setup: 12.1543ms, parallel_planning: 3.6373ms)
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "11057877875157303441" (".gitignore") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Adding "9118672249924992233" ("nx.json") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset{cache_key="nx.json,.gitignore,.nxignore"}: Hash Value: "14487711061617876370"
+DEBUG nx::native::tasks::task_hasher: hash_plans COMPLETED in 6.9864ms - processed 1 plans (setup: 635.1µs, hashing: 6.3449ms, assembly: 1.2584ms)
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.655Z - Serializing response for HASH_TASKS message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.655Z - Responding to HASH_TASKS message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.655Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.655Z - Time taken for 'write cache' 15.51130000000012ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.657Z - Done responding to the client handleHashTasks
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.657Z - Handled json message HASH_TASKS. Handling time: 70. Response time: 2.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.701Z - Received raw message of length 120
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.701Z - Received json message of type GET_ESTIMATED_TASK_TIMINGS
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.708Z - Serializing response for GET_ESTIMATED_TASK_TIMINGS message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.708Z - Responding to GET_ESTIMATED_TASK_TIMINGS message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.708Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.708Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:38.708Z - Handled json message GET_ESTIMATED_TASK_TIMINGS. Handling time: 7. Response time: 0.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.515Z - Established a connection. Number of open connections: 2
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.525Z - Closed a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.526Z - Established a connection. Number of open connections: 2
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.976Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.976Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.976Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.977Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.994Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.994Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.995Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.995Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.996Z - Time taken for 'total for creating and serializing project graph' 18.34729999999945ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.998Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:41.998Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 18. Response time: 4.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:43.662Z - Established a connection. Number of open connections: 3
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:43.668Z - Established a connection. Number of open connections: 4
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:43.668Z - Closed a connection. Number of open connections: 3
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.371Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.371Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.371Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.372Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.388Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.388Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.388Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.388Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.390Z - Time taken for 'total for creating and serializing project graph' 16.93870000000061ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.393Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:44.393Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 17. Response time: 5.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.556Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.556Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.556Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.557Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.570Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.570Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.571Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.571Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.572Z - Time taken for 'total for creating and serializing project graph' 14.007599999999002ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.573Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.573Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 14. Response time: 3.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.579Z - Established a connection. Number of open connections: 4
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.582Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.582Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.582Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.583Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.594Z - Wrote project graph cache to C:\Users\zhene\Documents\GitHub\tik-talk2\.nx\workspace-data\project-graph.json
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.594Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.595Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.595Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.596Z - Time taken for 'total for creating and serializing project graph' 12.36160000000018ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.599Z - Received raw message of length 125
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.600Z - Received json message of type REGISTER_FILE_WATCHER
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.600Z - Done responding to the client project-graph
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:47.600Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 12. Response time: 6.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:43:53.565Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.563Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.608Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.671Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 55 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.691Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.691Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.691Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.699Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 52 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.702Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 34 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.704Z - Time taken for 'changed-projects' 6.495599999994738ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.705Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.707Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.707Z - Handled json message FILE-WATCH-CHANGED. Handling time: 1. Response time: 16.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.709Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.710Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.710Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.710Z - Time taken for 'changed-projects' 0.354300000006333ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.710Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.710Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 1.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.712Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.713Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.713Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.714Z - Time taken for 'changed-projects' 0.7283000000170432ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.714Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.714Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 2.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.724Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.729Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 28 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.731Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.733Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.733Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.734Z - Time taken for 'changed-projects' 0.5259000000078231ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.735Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.735Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 4.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.803Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.803Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.803Z - [REQUEST]: eslint.config.mjs,libs/auth/src/lib/feature-login/login-page/login-page.component.html,apps/tik-talk2/src/app,apps/tik-talk2/src/app/app.routes.ts,apps/tik-talk2/src,apps/tik-talk2,libs/auth/src/index.ts,libs/chats/README.md,libs/auth/src/lib,libs/auth/src,libs/auth,libs/chats/src/index.ts,libs/chats/src/lib/data/services/chats.service.ts,libs/chats/src/lib/data/interfaces,libs/chats/src/lib/data,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.ts,libs/auth/tsconfig.json,apps/tik-talk2/src/main.ts,apps/tik-talk2/src/index.html,libs/auth/src/lib/feature-login/login-page,libs/chats/src/lib/data/index.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-message/chat-workspace-message.component.html,apps/tik-talk2/src/app/app.scss,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.scss,libs/auth/src/lib/auth/auth.interface.ts,apps,libs/chats/project.json,libs/auth/src/lib/feature-login/login-page/login-page.component.ts,libs/auth/src/lib/feature-login/index.ts,libs/auth/eslint.config.mjs,apps/tik-talk2/tsconfig.spec.json,apps/tik-talk2/tsconfig.app.json,apps/tik-talk2/src/app/app.ts,libs/.gitkeep,libs/auth/src/lib/auth/auth.service.ts,apps/tik-talk2/src/fonts.scss,libs/auth/src/lib/auth/access.guard.ts,apps/tik-talk2/src/app/app.config.ts,libs/auth/README.md,libs/auth/src/lib/feature-login/login-page/login-page.component.scss,libs/auth/tsconfig.lib.json,libs/auth/src/lib/feature-login,apps/tik-talk2/src/app/app.html,libs/auth/src/lib/auth,libs/auth/src/lib/auth/auth.interceptor.ts,apps/tik-talk2/src/margins.scss,libs/chats/eslint.config.mjs,apps/tik-talk2/project.json,libs/chats/src/lib/data/interfaces/chats.interface.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header/chat-workspace-header.component.html,libs/chats/src/lib/data/services,karma.conf.js,.prettierignore,apps/tik-talk2/src/styles.scss,libs/auth/project.json,libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.ts,libs/common-ui/src/index.ts,libs/common-ui/eslint.config.mjs,libs/common-ui/src/lib/components/avatar-circle,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-messages-wrapper.component.scss,libs/chats/src/lib/feature-chats-workspace/chats-page,libs/common-ui/README.md,libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.html,libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.scss,libs/chats/src/lib/ui/message-input,libs/chats,libs/common-ui/src/lib/components/svg-icon/svg-icon.component.ts,libs/chats/src/lib/ui,libs/common-ui/src/lib/components/index.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-header,libs/common-ui/src/lib/components,libs/common-ui/src/lib/directives/dnd.directive.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-messages-wrapper.component.html,libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.ts,libs/chats/src/lib/feature-chats-workspace/chats-page/chats-page.component.scss,libs/chats/src/lib/ui/message-input/message-input.component.html,libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.html,libs/chats/src/lib/feature-chats-workspace/chats-page/chats-page.component.html,libs/chats/src/lib/ui/message-input/message-input.component.scss,libs/chats/tsconfig.lib.json,libs/chats/src/lib/feature-chats-workspace/chats-btn/chats-btn.component.ts,libs/chats/src/lib/feature-chats-workspace/index.ts,libs/common-ui/src/lib/components/svg-icon,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.scss,libs/chats/src/lib/ui/message-input/message-input.component.ts,libs/chats/src/lib/feature-chats-workspace/chats-list/chats-list.component.scss,libs/chats/tsconfig.json,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.ts,libs/chats/src/lib/ui/index.ts,libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.html,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace.component.html,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-messages-wrapper.component.ts,libs/chats/src/lib,libs/chats/src/lib/feature-chats-workspace/chats-page/chatsRoutes.ts,libs/chats/src,libs/chats/src/lib/feature-chats-workspace,libs/chats/src/lib/feature-chats-workspace/chats-btn,libs/common-ui/src/lib/directives/click.directive.ts,libs/chats/src/lib/feature-chats-workspace/chats-list,libs/common-ui/src/lib/components/avatar-circle/avatar-circle.component.scss,libs/chats/src/lib/feature-chats-workspace/chats-page/chats-page.component.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-message,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-message/chat-workspace-message.component.ts,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper,libs/chats/src/lib/feature-chats-workspace/chat-workspace/chat-workspace-messages-wrapper/chat-workspace-message/chat-workspace-message.component.scss,libs/common-ui/project.json,libs/interfaces/src/lib/profile/profile.interface.ts,libs/common-ui/src/lib,libs/common-ui/src/lib/pipes/img-url.pipe.ts,libs/layout/README.md,libs/common-ui/src/lib/pipes/data-time.pipe.ts,libs/layout/eslint.config.mjs,libs/layout/src/index.ts,libs/common-ui/src/lib/pipes/index.ts,libs/interfaces/README.md,libs/interfaces/src/lib/profile/index.ts,libs/common-ui/src/lib/directives,libs/interfaces/src/index.ts,libs/common-ui,libs/interfaces/eslint.config.mjs,libs/layout/src/lib/sidebar/sidebar.component.html,libs/common-ui/src/lib/pipes/hh-mm.pipe.ts,libs/layout/src/lib/layout/layout.component.html,libs/common-ui/tsconfig.lib.json,libs/interfaces,libs/common-ui/src/lib/directives/index.ts,libs/layout/project.json,libs/interfaces/tsconfig.lib.json,libs/layout/src/lib/layout/layout.component.ts,libs/common-ui/src/lib/pipes,libs/interfaces/src/lib/profile,libs/interfaces/project.json,libs/layout/src/lib/layout/layout.component.scss,libs/interfaces/src/lib,libs/common-ui/tsconfig.json,libs/interfaces/src,libs/common-ui/src,libs/layout/src/lib/layout,libs/interfaces/tsconfig.json,libs/common-ui/src/lib/directives/only-number.directive.ts,libs/posts/src/lib/data,libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.scss,libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.ts,libs/posts/src/lib/data/interfaces,libs/posts/src/lib/data/services/post.service.ts,libs/posts/src/lib/data/interfaces/post.interface.ts,libs/posts/src/lib/feature-posts-wall/post/post.component.html,libs/layout/src/lib/sidebar/sidebar.component.ts,libs/layout/src/lib/sidebar/subcriber-card/subcriber-card.component.html,libs/layout/tsconfig.lib.json,libs/layout/src/lib/sidebar/subcriber-card,libs/posts/src/index.ts,libs/layout/tsconfig.json,libs/layout,libs/posts/src/lib/feature-posts-wall/index.ts,libs/layout/src/lib/sidebar/subcriber-card/subcriber-card.component.ts,libs/layout/src/lib,libs/posts/src/lib/feature-posts-wall/post-feed/post-feed.component.html,libs/layout/src,libs/layout/src/lib/sidebar/subcriber-card/subcriber-card.component.scss,libs/layout/src/lib/sidebar/sidebar.component.scss,libs/posts/README.md,libs/posts/project.json,libs/posts/src/lib/data/services,libs/posts/src/lib/data/index.ts,libs/layout/src/lib/sidebar,libs/posts/eslint.config.mjs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.848Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.851Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.859Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 32 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.859Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.860Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.860Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.870Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 32 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.874Z - Time taken for 'hash changed files from watcher' 16.323700000008103ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.874Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.874Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 15.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.875Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.875Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.875Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.875Z - Time taken for 'changed-projects' 0.12159999998402782ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.875Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.876Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 1.
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.912Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.927Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 26 file(s) deleted
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.928Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.928Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.929Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.932Z - Time taken for 'changed-projects' 0.28700000001117587ms
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.934Z - Done responding to the client File watch changed
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.935Z - Handled json message FILE-WATCH-CHANGED. Handling time: 0. Response time: 7.
+Time for 'nx/core/package-json:createNodes' 39.789300000004005
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.962Z - [WATCHER]: Processing file changes in outputs
+Time for 'nx/core/project-json:createNodes' 43.11230000000796
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.988Z - Closed a connection. Number of open connections: 3
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.988Z - Closed a connection. Number of open connections: 2
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.989Z - Closed a connection. Number of open connections: 1
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.989Z - Closed a connection. Number of open connections: 0
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.989Z - [WATCHER]: Stopping the watcher for C:\Users\zhene\Documents\GitHub\tik-talk2 (sources)
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:52.990Z - [WATCHER]: Stopping the watcher for C:\Users\zhene\Documents\GitHub\tik-talk2 (outputs)
+[NX v22.1.1 Daemon Server] - 2025-11-28T14:46:53.014Z - Server stopped because: "LOCK_FILES_CHANGED"

@@ -6,7 +6,7 @@ import {
 import { inject, Injectable } from '@angular/core'
 import { map, Observable } from 'rxjs'
 import { HttpClient } from '@angular/common/http'
-import { Profile } from '@tt/interfaces/profile'
+import { Profile } from '@tt/data-access/profile'
 
 @Injectable({
 	providedIn: 'root'

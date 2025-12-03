@@ -1,10 +1,5 @@
-<form
-	class="form-wb"
-	[formGroup]="form"
-	(ngSubmit)="onSubmit($event)">
-	<h4 class="h4 mb16 info">
-		Информация о сотруднике
-	</h4>
+<form class="form-wb" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+	<h4 class="h4 mb16 info">Информация о сотруднике</h4>
 
 	<label class="tt-control-label mb16">
 		Организация
@@ -16,27 +11,15 @@
 	</label>
 
 	<!--@if (form.touched && form.invalid) если форма потрогана и невалидна { -->
-	<small class="error-message"
-		>Все поля обязательны !!!</small
-	>
+	<small class="error-message">Все поля обязательны !!!</small>
 
 	<label class="tt-control-label mb16">
 		Тип сотрудника
-		<select
-			class="tt-input"
-			formControlName="type">
-			<option [value]="ReceiverType.executor">
-				Исполнитель
-			</option>
-			<option [value]="ReceiverType.responsible">
-				Ответственный
-			</option>
-			<option [value]="ReceiverType.supervisor">
-				Руководитель
-			</option>
-			<option [value]="ReceiverType.analyst">
-				Аналитик
-			</option>
+		<select class="tt-input" formControlName="type">
+			<option [value]="ReceiverType.executor">Исполнитель</option>
+			<option [value]="ReceiverType.responsible">Ответственный</option>
+			<option [value]="ReceiverType.supervisor">Руководитель</option>
+			<option [value]="ReceiverType.analyst">Аналитик</option>
 		</select>
 	</label>
 
@@ -63,25 +46,15 @@
 		</label>
 
 		@if (
-			form.controls.type.value ===
-				ReceiverType.supervisor ||
-			form.controls.type.value ===
-				ReceiverType.analyst
+			form.controls.type.value === ReceiverType.supervisor ||
+			form.controls.type.value === ReceiverType.analyst
 		) {
 		} @else {
-			@if (
-				form.controls.type.value ===
-				ReceiverType.executor
-			) {
+			@if (form.controls.type.value === ReceiverType.executor) {
 				<label class="tt-control-label mb16">
 					Операция
-					<select
-						class="tt-input"
-						formControlName="operation">
-						@for (
-							oper of operations;
-							track oper.value
-						) {
+					<select class="tt-input" formControlName="operation">
+						@for (oper of operations; track oper.value) {
 							<option [value]="oper.value">
 								{{ oper.label }}
 							</option>
@@ -116,30 +89,23 @@
 				type="tel"
 				class="tt-input"
 				formControlName="telephone"
-				placeholder=""
-				onlnyNumber />
+				[maskito]="phoneMask" />
 		</label>
 
 		<label class="tt-control-label mb16">
 			Снилс
-			<input
-				class="tt-input"
-				formControlName="snils"
-				type="text"
-				placeholder=""
-				onlyNumber />
+			<input class="tt-input" formControlName="snils" type="text" onlyNumber />
 		</label>
 	</div>
 
-	<div
-		class="two-columns"
-		formGroupName="dateRange">
+	<div class="two-columns" formGroupName="dateRange">
 		<label class="tt-control-label mb16">
 			От
 			<input
 				class="tt-input"
 				formControlName="from"
-				type="date" />
+				type="text"
+				[maskito]="dateMask" />
 		</label>
 
 		<label class="tt-control-label mb16">
@@ -147,7 +113,8 @@
 			<input
 				class="tt-input"
 				formControlName="to"
-				type="date" />
+				type="text"
+				[maskito]="dateMask" />
 		</label>
 	</div>
 	<!-- @if (form.controls.dateRange.touched && form.controls.dateRange.hasError('dateRange')) {
@@ -157,16 +124,10 @@
 	<div class="one-h-two-btn">
 		<h4 class="h4 mb16">Адрес склада</h4>
 		<div class="btn-adr-plus-minus">
-			<button
-				class="btn-add-remove"
-				type="button"
-				(click)="addAddress()">
+			<button class="btn-add-remove" type="button" (click)="addAddress()">
 				+
 			</button>
-			<button
-				class="btn-add-remove"
-				type="button"
-				(click)="deleteAddress(1)">
+			<button class="btn-add-remove" type="button" (click)="deleteAddress(1)">
 				-
 			</button>
 		</div>
@@ -220,24 +181,17 @@
 			<h4 class="mb16 h6">Дополнительно</h4>
 			<div class="additional-options">
 				@for (
-					control of form.controls.feature
-						.controls | keyvalue: sort;
+					control of form.controls.feature.controls | keyvalue: sort;
 					track control;
 					let i = $index
 				) {
 					<label>
 						{{ features[i].label }}
-						<input
-							type="checkbox"
-							[formControlName]="control.key" />
+						<input type="checkbox" [formControlName]="control.key" />
 					</label>
 				}
 			</div>
 		</div>
 	}
-	<button
-		class="btn-form-sk btn-shadow"
-		type="submit">
-		Отправить
-	</button>
+	<button class="btn-form-sk btn-shadow" type="submit">Отправить</button>
 </form>

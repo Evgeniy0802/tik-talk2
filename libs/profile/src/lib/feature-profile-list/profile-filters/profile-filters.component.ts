@@ -2,7 +2,7 @@ import { Component, inject, OnDestroy } from '@angular/core'
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { debounceTime, startWith, Subscription, switchMap } from 'rxjs'
 import { SvgIconComponent } from '@tt/common-ui'
-import { ProfileService } from '../../data'
+import { ProfileService } from '@tt/data-access/profile'
 
 @Component({
 	selector: 'app-profile-filters',

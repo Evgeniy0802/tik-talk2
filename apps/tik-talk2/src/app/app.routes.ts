@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router'
 import { canActivateAuth, LoginPageComponent } from '@tt/auth'
 import {
-	CommunitiesPageComponent,
 	ExperemntalFormsComponent,
 	ProfilePageComponent,
 	SearchPageComponent,
@@ -9,6 +8,7 @@ import {
 } from '@tt/profile'
 import { chatsRoutes } from '@tt/chats'
 import { LayoutComponent } from '@tt/layout'
+import { CommunitiesPageComponent } from '@tt/communities'
 
 export const routes: Routes = [
 	{

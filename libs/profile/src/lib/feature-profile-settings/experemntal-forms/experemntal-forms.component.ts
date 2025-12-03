@@ -10,12 +10,13 @@ import {
 	Validators
 } from '@angular/forms'
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
-import { FormsService } from '../../data'
-import { Feature, OperationOption } from '../../data'
 import { KeyValuePipe } from '@angular/common'
 import { debounceTime, fromEvent, Subject, takeUntil } from 'rxjs'
 import { NameValidator } from '../index'
 import { OnlyNumberDirective } from '@tt/common-ui'
+import { MaskitoOptions } from '@maskito/core'
+import { MaskitoDirective } from '@maskito/angular'
+import { Feature, JobsService, OperationOption } from '@tt/data-access/jobs'
 
 function validateStartWith(forbiddenLetter: string): ValidatorFn {
 	return (control: AbstractControl) => {
@@ -98,13 +99,18 @@ function getAddressForm(initialValue: Address = {}) {
 
 @Component({
 	selector: 'app-experemntal-forms',
-	imports: [ReactiveFormsModule, KeyValuePipe, OnlyNumberDirective],
+	imports: [
+		ReactiveFormsModule,
+		KeyValuePipe,
+		OnlyNumberDirective,
+		MaskitoDirective
+	],
 	templateUrl: './experemntal-forms.component.html',
 	styleUrl: './experemntal-forms.component.scss'
 })
 export class ExperemntalFormsComponent {
 	ReceiverType = ReceiverType
-	formsService = inject(FormsService)
+	formsService = inject(JobsService)
 	features: Feature[] = []
 	hostElement = inject(ElementRef)
 	r2 = inject(Renderer2)
@@ -151,7 +157,7 @@ export class ExperemntalFormsComponent {
 		operation: Operation.acceptance,
 		areaResponsibility: '',
 		id: '',
-		telephone: '+7',
+		telephone: '',
 		snils: ''
 	}
 
@@ -177,8 +183,8 @@ export class ExperemntalFormsComponent {
 		),
 		id: new FormControl(this.initialValue.id, Validators.required),
 		telephone: new FormControl(this.initialValue.telephone, [
-			Validators.required,
-			Validators.pattern(/^(\+7|8)\d{10}$/)
+			Validators.required
+			//Validators.pattern(/^(\+7|8)\d{10}$/)
 		]),
 		snils: new FormControl(this.initialValue.snils, [
 			Validators.required,
@@ -294,6 +300,33 @@ export class ExperemntalFormsComponent {
 		this.form.controls.addresses.removeAt(index, {
 			emitEvent: false
 		})
+	}
+
+	readonly dateMask: MaskitoOptions = {
+		mask: [/\d/, /\d/, '.', /\d/, /\d/, '.', /\d/, /\d/, /\d/, /\d/]
+	}
+
+	readonly phoneMask: MaskitoOptions = {
+		mask: [
+			'+',
+			'7',
+			'',
+			'(',
+			/\d/,
+			/\d/,
+			/\d/,
+			')',
+			'',
+			/\d/,
+			/\d/,
+			/\d/,
+			'-',
+			/\d/,
+			/\d/,
+			'-',
+			/\d/,
+			/\d/
+		]
 	}
 
 	onSubmit(event: SubmitEvent) {

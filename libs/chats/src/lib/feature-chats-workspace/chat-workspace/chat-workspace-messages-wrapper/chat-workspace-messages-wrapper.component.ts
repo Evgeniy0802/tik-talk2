@@ -4,14 +4,10 @@ import {
 	inject,
 	input,
 	Renderer2,
-	signal,
-	SimpleChanges,
 	ViewChild
 } from '@angular/core'
 import { ChatWorkspaceMessageComponent } from './chat-workspace-message/chat-workspace-message.component'
 import { MessageInputComponent } from '../../../ui'
-import { ChatsService } from '../../../data'
-import { Chat, Message } from '../../../data'
 import {
 	debounceTime,
 	firstValueFrom,
@@ -20,8 +16,8 @@ import {
 	takeUntil,
 	timer
 } from 'rxjs'
-// @ts-ignore
 import { DateTime } from 'luxon'
+import { Chat, ChatsService, Message } from '@tt/data-access/chats'
 
 @Component({
 	selector: 'app-chat-workspace-messages-wrapper',

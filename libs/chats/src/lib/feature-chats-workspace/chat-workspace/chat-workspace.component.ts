@@ -3,9 +3,9 @@ import { ChatWorkspaceHeaderComponent } from './chat-workspace-header/chat-works
 import { ChatWorkspaceMessagesWrapperComponent } from './chat-workspace-messages-wrapper/chat-workspace-messages-wrapper.component'
 import { MessageInputComponent } from '../../ui'
 import { ActivatedRoute, Router } from '@angular/router'
-import { ChatsService } from '../../data'
-import { of, switchMap } from 'rxjs'
+import { filter, of, switchMap } from 'rxjs'
 import { AsyncPipe } from '@angular/common'
+import { ChatsService } from '@tt/data-access/chats'
 
 @Component({
 	selector: 'app-chat-workspace',
@@ -28,6 +28,7 @@ export class ChatWorkspaceComponent {
 			if (id === 'new') {
 				//если айдишник новый равен new
 				return this.route.queryParams.pipe(
+					filter(({ userid }) => userid),
 					//берем куери параметр
 					switchMap(({ userId }) => {
 						return this.chatsService.createChat(userId).pipe(

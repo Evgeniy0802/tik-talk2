@@ -4,7 +4,7 @@ import { SubcriberCardComponent } from './subcriber-card/subcriber-card.componen
 import { RouterLink, RouterLinkActive } from '@angular/router'
 import { firstValueFrom } from 'rxjs'
 import { ClickDirective, ImgUrlPipe, SvgIconComponent } from '@tt/common-ui'
-import { ProfileService } from '@tt/profile'
+import { ProfileService } from '@tt/data-access/profile'
 
 @Component({
 	selector: 'app-sidebar',

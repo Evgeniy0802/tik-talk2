@@ -15,10 +15,10 @@ import {
 	Subject,
 	takeUntil
 } from 'rxjs'
-import { PostService } from '../../data'
 import { PostInputComponent } from '../../ui'
-import { PostComponent } from '../index'
-import { GlobalStoreService } from '@tt/shared'
+import { PostComponent } from '../../feature-posts-wall'
+import { PostService } from '@tt/data-access/posts'
+import { GlobalStoreService } from '@tt/data-access/shared'
 
 @Component({
 	selector: 'app-post-feed',
